@@ -7,8 +7,8 @@
   --color-secondary: #5c5c5c;
   --color-accent: #ff4d00;
   --color-text: #0a0a0a;
-  --color-background: #ffffff;
-  --color-foreground: #dcdcdc;
+  --color-background: #dcdcdc;
+  --color-foreground: #f0eeee;
 }
 
 @media (prefers-color-scheme: dark) {

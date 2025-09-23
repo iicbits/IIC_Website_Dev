@@ -1,0 +1,134 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const Events = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const testimonials = [
+    {
+      description:
+        "Franklin turned our ideas into a sharp, clean brand. Fast, easy, and right on point.",
+      author: "Ethan Moore",
+      position: "Idea Pitching Competition",
+      image: "/images/incub.png", // Replace with actual image path
+    },
+    {
+      description:
+        "Working with Franklin was a game-changer for our startup. Incredible attention to detail.",
+      author: "Sarah Johnson",
+      position: "Innovathon 2025",
+      image: "/images/incub.png", // Replace with actual image path
+    },
+    {
+      description:
+        "The best design partner we've ever worked with. Professional and creative.",
+      author: "Mike Chen",
+      position: "TexCelerate 2025",
+      image: "/images/incub.png", // Replace with actual image path
+    },
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
+  };
+
+  return (
+    <section className="min-h-screen py-12 mt-10">
+      <div className="text-gray-500 text-base mb-4 text-center">(Events)</div>
+      <h1 className="text-6xl font-calsans font-bold mb-8 text-center">
+        Our Initiatives
+      </h1>
+      <div className="flex gap-6 max-w-7xl mx-auto p-6">
+        {/* Left Card */}
+        <div className="bg-gray-900 text-white rounded-3xl p-8 flex flex-col justify-between min-h-[500px] w-80 flex-shrink-0">
+          <div className="space-y-12">
+            <div>
+              <div className="text-6xl font-bold mb-2">35+</div>
+              <div className="text-gray-300 text-lg">Total Events</div>
+            </div>
+
+            <div>
+              <div className="text-6xl font-bold mb-2">10L+</div>
+              <div className="text-gray-300 text-lg">
+                Total Prize Money Distributed
+              </div>
+            </div>
+
+            <div>
+              <div className="text-6xl font-bold mb-2">1000+</div>
+              <div className="text-gray-300 text-lg">Participation</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Card */}
+        <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[500px]">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url(${testimonials[currentSlide].image})`,
+            }}
+          >
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 p-8 h-full flex flex-col justify-between text-white">
+            {/* Slide indicator */}
+            <div className="flex justify-end">
+              <span className="bg-black bg-opacity-30 px-3 py-1 rounded-full text-sm">
+                {String(currentSlide + 1).padStart(2, "0")} /{" "}
+                {String(testimonials.length).padStart(2, "0")}
+              </span>
+            </div>
+
+            <div className="space-y-6">
+              <div className="text-gray-300 text-lg">
+                {testimonials[currentSlide].position}
+              </div>
+              <blockquote className="text-3xl font-bold leading-tight">
+                "{testimonials[currentSlide].description}"
+              </blockquote>
+
+              {/* <div>
+                <div className="text-xl font-semibold">
+                  {testimonials[currentSlide].author}
+                </div>
+                <div className="text-gray-300">
+                  {testimonials[currentSlide].position}
+                </div>
+              </div> */}
+            </div>
+
+            {/* Navigation */}
+            <div className="flex justify-end space-x-2">
+              <button
+                onClick={prevSlide}
+                className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Events;

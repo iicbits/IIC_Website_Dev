@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         calsans: ["var(--font-cal-sans)", "sans-serif"],
+        dancingscript: ["var(--font-dancing-script)", "cursive"],
       },
     },
   },
