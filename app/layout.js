@@ -1,16 +1,19 @@
 import localFont from "next/font/local";
+import { Inter, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Home/components/Navbar";
+import Footer from "./Home/components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const calSans = localFont({
+  src: "../public/fonts/CalSans-SemiBold.woff",
+  variable: "--font-cal-sans",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
 });
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "IIC BIT Sindri",
@@ -21,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} ${calSans.variable} ${dancingScript.variable}`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -8,8 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        text: "var(--color-text)",
+        background: "var(--color-background)",
+        foreground: "var(--color-foreground)",
+      },
+      fontFamily: {
+        calsans: ["var(--font-cal-sans)", "sans-serif"],
+        dancingscript: ["var(--font-dancing-script)", "cursive"],
       },
     },
   },
