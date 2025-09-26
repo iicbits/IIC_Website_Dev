@@ -1,8 +1,104 @@
+"use client";
+
+import React, { useState, useMemo } from "react";
 import Image from "next/image";
-import React from "react";
+
+const projectData = [
+  {
+    id: 1,
+    category: "UI Design",
+    imageUrl: "/images/incub.png",
+    title: "Abstract Wireframe Render",
+  },
+  {
+    id: 2,
+    category: "Development",
+    imageUrl: "/images/incub.png",
+    title: "E-commerce Photography Setup",
+  },
+  {
+    id: 3,
+    category: "UX Design",
+    imageUrl: "/images/incub.png",
+    title: "Spiral Staircase Architecture",
+  },
+  {
+    id: 4,
+    category: "Finance",
+    imageUrl: "/images/incub.png",
+    title: "Financial Dashboard UI",
+  },
+];
+
+const categories = ["All", "UI Design", "Development", "UX Design", "Finance"];
 
 const page = () => {
-  return <div className=""></div>;
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === "All") {
+      return projectData;
+    }
+    return projectData.filter((project) => project.category === activeFilter);
+  }, [activeFilter]);
+
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <p className="text-secondary mb-4">(Archives)</p>
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-calsans font-extrabold mb-8">
+        Sweet Memories
+      </h2>
+
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap gap-x-8 gap-y-2 mb-12">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setActiveFilter(category)}
+            className={`
+              text-base font-semibold border-b-2 transition duration-300 
+              ${
+                activeFilter === category
+                  ? "text-accent border-accent"
+                  : "text-gray-500 border-transparent hover:text-accent" // Inactive state
+              }
+            `}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProjects.map((project) => (
+          <div
+            key={project.id}
+            className="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]"
+          >
+            <div className="relative w-full aspect-[4/3] bg-gray-900">
+              <Image
+                src={project.imageUrl}
+                alt={`Image ${project.id}`}
+                fill
+                className="object-cover"
+                priority // Load the first few images faster
+              />
+              <div className="absolute inset-0 flex items-end p-7 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white">{project.title}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {filteredProjects.length === 0 && (
+          <p className="text-gray-500 col-span-full text-center py-10">
+            No projects found in this category.
+          </p>
+        )}
+      </div>
+    </section>
+  );
 };
 
 export default page;

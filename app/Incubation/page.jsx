@@ -1,4 +1,5 @@
 import { Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const founders = [
@@ -34,7 +35,7 @@ const founders = [
   },
 ];
 
-const Incubation = () => {
+const page = () => {
   return (
     <section className="">
       <div className="min-h-screen md:min-h-[80vh] bg-foreground">
@@ -48,7 +49,7 @@ const Incubation = () => {
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
             <br />
-            <span className="text-secondary">based in</span> London{" "}
+            <span className="text-secondary">based in</span>{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -65,6 +66,12 @@ const Incubation = () => {
 
       <div className="w-full py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl w-full mx-auto space-y-32">
+          <div className="mb-20">
+            <p className="text-sm text-gray-500 tracking-wider">(Startups)</p>
+            <h2 className="mt-2 text-5xl md:text-6xl font-calsans font-extrabold text-gray-900">
+              Our Incubatees
+            </h2>
+          </div>
           {founders.map((founder, index) => (
             <div
               key={index}
@@ -72,9 +79,11 @@ const Incubation = () => {
             >
               {/* Image and Socials Section */}
               <div className="relative w-full lg:w-1/3 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <Image
                   src={founder.image}
                   alt={founder.name}
+                  height={400}
+                  width={400}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute bottom-4 right-4 flex space-x-2">
@@ -130,4 +139,4 @@ const Incubation = () => {
   );
 };
 
-export default Incubation;
+export default page;
