@@ -19,7 +19,7 @@ const JoinUs = () => {
           and insights you won't find elsewhere.
         </p>
 
-        <Link href="" target="_blank" rel="noopener noreferrer">
+        <Link href="/Registration-form" rel="noopener noreferrer">
           <button className="flex items-center space-x-2 px-5 py-2 bg-neutral-700 rounded-full hover:bg-neutral-600 text-primary transition-colors duration-300 mt-10 cursor-pointer">
             <span>Apply Now</span>
             <span className="text-xl animate-pulse">→</span>

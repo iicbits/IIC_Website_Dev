@@ -55,7 +55,12 @@ const Resources = () => {
       {/* Awards List */}
       <div className="space-y-0 border-t-[0.5px] border-secondary">
         {awards.map((award, index) => (
-          <a href={award.url} target="_blank" rel="noopener noreferrer">
+          <a
+            key={index}
+            href={award.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               key={index}
               className={`group relative border-b-[0.5px] py-8 cursor-pointer transition-all duration-700 ${

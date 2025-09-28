@@ -84,7 +84,7 @@ const Navbar = () => {
 
         {/* Desktop Contact Button */}
         <Link
-          href="#"
+          href="/Contact"
           className={`hidden md:block px-4 py-2 border-2 border-neutral-700 rounded-full text-sm transition-colors duration-300 ${
             activeItem === "Contact"
               ? "text-orange-500 bg-orange-100 border-orange-500"
@@ -139,7 +139,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="#"
+              href="/Contact"
               onClick={() => setIsMenuOpen(false)}
               className={`mx-8 mt-4 px-4 py-2 border-2 border-neutral-700 rounded-full text-sm text-center transition-colors duration-300 ${
                 activeItem === "Contact"
