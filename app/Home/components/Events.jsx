@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,14 +41,14 @@ const Events = () => {
   };
 
   return (
-    <section className="min-h-screen py-12 mt-10">
+    <section className="min-h-screen py-12 md:mt-10">
       <div className="text-gray-500 text-base mb-4 text-center">(Events)</div>
-      <h1 className="text-6xl font-calsans font-bold mb-8 text-center">
+      <h1 className="text-5xl md:text-6xl font-calsans font-bold mb-8 text-center">
         Our Initiatives
       </h1>
-      <div className="flex gap-6 max-w-7xl mx-auto p-6">
+      <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto p-6">
         {/* Left Card */}
-        <div className="bg-gray-900 text-white rounded-3xl p-8 flex flex-col justify-between min-h-[500px] w-80 flex-shrink-0">
+        <div className="bg-gray-900 text-white w-full md:w-80 rounded-3xl p-8 flex flex-col justify-between min-h-[500px] flex-shrink-0">
           <div className="space-y-12">
             <div>
               <div className="text-6xl font-bold mb-2">35+</div>
@@ -115,13 +115,13 @@ const Events = () => {
                 onClick={prevSlide}
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
               >
-                <ChevronLeft className="w-6 h-6" />
+                <FaChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={nextSlide}
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
               >
-                <ChevronRight className="w-6 h-6" />
+                <FaChevronRight className="w-6 h-6" />
               </button>
             </div>
           </div>

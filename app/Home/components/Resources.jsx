@@ -1,45 +1,45 @@
 "use client";
 
-import { Youtube } from "lucide-react";
 import { useState } from "react";
+import { FaYoutube } from "react-icons/fa";
 
 const Resources = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
 
   const awards = [
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
   ];
@@ -48,14 +48,21 @@ const Resources = () => {
     <div className="max-w-7xl mx-auto py-16 px-6">
       {/* Header */}
       <div className="text-center mb-16">
-        <div className="text-gray-500 text-base mb-4">(Training)</div>
-        <h2 className="text-6xl font-bold text-gray-900">Learning Resources</h2>
+        <div className="text-gray-500 text-base mb-4">(Notices)</div>
+        <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
+          Opportunities
+        </h2>
       </div>
 
       {/* Awards List */}
       <div className="space-y-0 border-t-[0.5px] border-secondary">
         {awards.map((award, index) => (
-          <a href={award.url} target="_blank" rel="noopener noreferrer">
+          <a
+            key={index}
+            href={award.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               key={index}
               className={`group relative border-b-[0.5px] py-8 cursor-pointer transition-all duration-700 ${
@@ -94,7 +101,7 @@ const Resources = () => {
                 </div>
 
                 {/* Right: Company */}
-                <div className="w-48 flex-shrink-0 text-right">
+                <div className="hidden md:flexw-48 flex-shrink-0 text-right">
                   <span
                     className={`text-sm transition-colors duration-700 ${
                       hoveredIndex - 1 === index

@@ -1,4 +1,9 @@
-import { Instagram, Linkedin } from "lucide-react";
+"use client";
+
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const founders = [
@@ -34,12 +39,12 @@ const founders = [
   },
 ];
 
-const Incubation = () => {
+const page = () => {
   return (
     <section className="">
-      <div className="min-h-screen md:min-h-[80vh] bg-foreground">
+      <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
-          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl leading-loose mb-8">
+          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Empowering{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             <span className="text-accent">Design</span>
@@ -47,8 +52,6 @@ const Incubation = () => {
             <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
-            <br />
-            <span className="text-secondary">based in</span> London{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -56,15 +59,21 @@ const Incubation = () => {
             conversion focused designs—no delays, no drama.
           </p>
 
-          <button className="flex items-center space-x-2 px-5 py-2 rounded-full hover:bg-neutral-600 border border-gray-400 transition-colors duration-300">
+          <button className="flex items-center space-x-2">
             <span>Scroll Down</span>
-            <span className="text-xl animate-bounce">↓</span>
+            <span className="text-lg animate-bounce">↓</span>
           </button>
         </main>
       </div>
 
       <div className="w-full py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl w-full mx-auto space-y-32">
+          <div className="mb-20">
+            <p className="text-sm text-gray-500 tracking-wider">(Startups)</p>
+            <h2 className="mt-2 text-5xl md:text-6xl font-calsans font-extrabold text-gray-900">
+              Our Incubatees
+            </h2>
+          </div>
           {founders.map((founder, index) => (
             <div
               key={index}
@@ -72,9 +81,11 @@ const Incubation = () => {
             >
               {/* Image and Socials Section */}
               <div className="relative w-full lg:w-1/3 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <Image
                   src={founder.image}
                   alt={founder.name}
+                  height={400}
+                  width={400}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute bottom-4 right-4 flex space-x-2">
@@ -85,7 +96,7 @@ const Incubation = () => {
                     rel="noopener noreferrer"
                     className="p-2 bg-gray-100/40 rounded-full"
                   >
-                    <Linkedin />
+                    <FaLinkedin />
                   </a>
                   <a
                     href={founder.socials.instagram}
@@ -93,7 +104,7 @@ const Incubation = () => {
                     rel="noopener noreferrer"
                     className="p-2 bg-gray-100/40 rounded-full"
                   >
-                    <Instagram />
+                    <AiFillInstagram />
                   </a>
                 </div>
               </div>
@@ -126,8 +137,37 @@ const Incubation = () => {
           ))}
         </div>
       </div>
+
+      {/* Call to Action Button */}
+      <div className="mx-2 md:mx-4 mt-40 h-[70vh] md:h-[60vh]">
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/incub.png"
+            alt="Incubator"
+            width={500}
+            height={300}
+            className="w-full h-full object-cover rounded-3xl"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-7">
+            <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
+              Need <span className="text-accent">Incubation</span> <br />
+              Support?
+            </h3>
+            <p className="text-gray-400 mt-4 max-w-xl text-center">
+              Send your application at iicbit@bitsindri.ac.in or simply fill out
+              the contact form
+            </p>
+            <Link
+              href="/Contact"
+              className={`mt-10 px-4 py-2 border border-neutral-700 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
+            >
+              Contact<span className="ml-2 animate-pulse">→</span>
+            </Link>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Incubation;
+export default page;
