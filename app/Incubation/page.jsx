@@ -1,4 +1,7 @@
-import { Instagram, Linkedin } from "lucide-react";
+"use client";
+
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -39,9 +42,9 @@ const founders = [
 const page = () => {
   return (
     <section className="">
-      <div className="min-h-screen md:min-h-[80vh] bg-foreground">
+      <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
-          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl leading-loose mb-8">
+          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Empowering{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             <span className="text-accent">Design</span>
@@ -49,8 +52,6 @@ const page = () => {
             <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
-            <br />
-            <span className="text-secondary">based in</span>{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -58,9 +59,9 @@ const page = () => {
             conversion focused designs—no delays, no drama.
           </p>
 
-          <button className="flex items-center space-x-2 px-5 py-2 rounded-full hover:bg-neutral-600 border border-gray-400 transition-colors duration-300">
+          <button className="flex items-center space-x-2">
             <span>Scroll Down</span>
-            <span className="text-xl animate-bounce">↓</span>
+            <span className="text-lg animate-bounce">↓</span>
           </button>
         </main>
       </div>
@@ -95,7 +96,7 @@ const page = () => {
                     rel="noopener noreferrer"
                     className="p-2 bg-gray-100/40 rounded-full"
                   >
-                    <Linkedin />
+                    <FaLinkedin />
                   </a>
                   <a
                     href={founder.socials.instagram}
@@ -103,7 +104,7 @@ const page = () => {
                     rel="noopener noreferrer"
                     className="p-2 bg-gray-100/40 rounded-full"
                   >
-                    <Instagram />
+                    <AiFillInstagram />
                   </a>
                 </div>
               </div>
@@ -138,7 +139,7 @@ const page = () => {
       </div>
 
       {/* Call to Action Button */}
-      <div className="max-w-7xl mx-auto mt-40 w-full h-[70vh] md:h-[60vh]">
+      <div className="mx-2 md:mx-4 mt-40 h-[70vh] md:h-[60vh]">
         <div className="relative w-full h-full">
           <Image
             src="/images/incub.png"

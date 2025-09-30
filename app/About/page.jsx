@@ -1,13 +1,16 @@
-import { Locate, PinIcon } from "lucide-react";
+"use client";
+
+import { LuLocateFixed } from "react-icons/lu";
+import { FaMapPin } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
 
 const page = () => {
   return (
     <section className="">
-      <div className="min-h-screen md:min-h-[80vh] bg-foreground">
+      <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
-          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl leading-loose mb-8">
+          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Empowering{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             <span className="text-accent">Design</span>
@@ -15,8 +18,6 @@ const page = () => {
             <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
-            <br />
-            <span className="text-secondary">based in</span> London{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -24,9 +25,9 @@ const page = () => {
             conversion focused designs—no delays, no drama.
           </p>
 
-          <button className="flex items-center space-x-2 px-5 py-2 rounded-full hover:bg-neutral-600 border border-gray-400 transition-colors duration-300">
+          <button className="flex items-center space-x-2">
             <span>Scroll Down</span>
-            <span className="text-xl animate-bounce">↓</span>
+            <span className="text-lg animate-bounce">↓</span>
           </button>
         </main>
       </div>
@@ -68,7 +69,7 @@ const page = () => {
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 mx-auto gap-8 md:gap-20 mt-8">
         <div className="px-4 md:px-16">
           <div className="p-3 rounded-full bg-black w-fit text-white">
-            <PinIcon />
+            <FaMapPin />
           </div>
           <h2 className="text-2xl font-semibold mt-2">Mission</h2>
           <p className="text-secondary mt-2">
@@ -78,7 +79,7 @@ const page = () => {
         </div>
         <div className="px-4 md:px-16">
           <div className="p-3 rounded-full bg-black w-fit text-white">
-            <Locate />
+            <LuLocateFixed />
           </div>
           <h2 className="text-2xl font-semibold mt-2">Vision</h2>
           <p className="text-secondary mt-2">

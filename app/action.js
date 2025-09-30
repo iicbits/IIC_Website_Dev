@@ -1,9 +1,7 @@
 "use server";
 
-//This file handle the registration form submission
-const googleScriptUrl =
-  "https://script.google.com/macros/s/AKfycbynbglmEOAvEFkng-UgUwx4fAwkxmr6jFXhI1y3rysEshwANp_ZUG2EFxM7fhlg1FdLXg/exec";
-
+//This file handle the registration form submission and contact us page data
+const googleScriptUrl = process.env.GOOGLE_SCRIPT_URL_REGISTRATION;
 export const registrationData = async (formData) => {
   const email = formData.email;
   const fullName = formData.fullName;
@@ -42,4 +40,30 @@ export const registrationData = async (formData) => {
   });
 
   const result = await response.json();
+
+  return result;
+};
+
+const googleScriptUrlContactUs = process.env.GOOGLE_SCRIPT_URL_CONTACT_FORM;
+
+export const contactUsData = async (formData) => {
+  const name = formData.name;
+  const email = formData.email;
+  const message = formData.message;
+
+  const response = await fetch(googleScriptUrlContactUs, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email,
+      name,
+      message,
+    }),
+  });
+
+  const result = await response.json();
+
+  return result;
 };

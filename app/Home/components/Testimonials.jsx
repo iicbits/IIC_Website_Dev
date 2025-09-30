@@ -1,9 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Star } from "lucide-react";
 import Image from "next/image";
 
-export default function TestimonialCarousel() {
+export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [

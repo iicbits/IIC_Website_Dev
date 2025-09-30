@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -115,13 +115,13 @@ const Events = () => {
                 onClick={prevSlide}
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
               >
-                <ChevronLeft className="w-6 h-6" />
+                <FaChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={nextSlide}
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 rounded-full p-3"
               >
-                <ChevronRight className="w-6 h-6" />
+                <FaChevronRight className="w-6 h-6" />
               </button>
             </div>
           </div>

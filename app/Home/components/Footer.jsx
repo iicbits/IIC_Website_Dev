@@ -1,39 +1,71 @@
 import React from "react";
+import Link from "next/link";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaInstagramSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className="footer w-full flex justify-center items-center flex-col py-10">
-      <div className="max-w-7xl w-full flex flex-col ">
-        <div className="w-full flex justify-center mb-10">
-          <p className="h-[1px] w-full bg-secondary"></p>
+    <footer className="footer w-full flex justify-center items-center flex-col px-2 md:px-4 mt-2">
+      <div className="flex justify-between flex-wrap gap-2 bg-black w-full text-sm text-gray-500 py-5 md:py-7 px-5 md:px-10 rounded-t-3xl ">
+        <p className="hidden md:block">
+          Copyright &copy; 2025 IIC BIT Sindri | All Rights Reserved.
+        </p>
+        <div className="flex items-center gap-4">
+          <Link href="/Contact" className="text-gray-300 hover:text-orange-400">
+            Contact
+          </Link>
+          <p>|</p>
+          <Link href="/About" className="text-gray-300 hover:text-orange-400">
+            About Us
+          </Link>
         </div>
-
-        <div className=" flex flex-col justify-center">
-          <div className="mb-2">
-            <h1 className="font-bold opacity-90 mb-1">MEET</h1>
-            <p className="flex flex-col mb-2 text-secondary">
-              <span className="">Incubation Centre, IT Building</span>
-              <span className="">BIT Sindri, Jharkhand</span>
-            </p>
-          </div>
-          <div className="">
-            <h1 className="font-bold opacity-90 mb-1">CONTACT</h1>
-            <p className="text-secondary">
-              {/* <MdEmail /> */}
-              <span className="">iicbits@bitsindri.ac.in</span>
-            </p>
-            <p className="text-secondary">
-              {/* <MdPhone /> */}
-              <span className="">+91 620 220 1234</span>
-            </p>
-          </div>
+        <div className="flex items-center gap-4 ">
+          <a
+            href="https://www.linkedin.com/company/iic-bit-sindri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-orange-400"
+          >
+            <FaLinkedin className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.instagram.com/iic_bitsindri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-orange-400"
+          >
+            <FaInstagramSquare className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.facebook.com/iicbitsindri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-orange-400"
+          >
+            <FaFacebookSquare className="h-5 w-5" />
+          </a>
+          <a
+            href="https://twitter.com/iicbitsindri"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-orange-400"
+          >
+            <FaTwitterSquare className="h-5 w-5" />
+          </a>
         </div>
-        <div className="flex justify-between w-full mt-10 text-sm text-secondary">
-          <p className="">
-            Copyright &copy; 2025 IIC BIT Sindri | All Rights Reserved.
-          </p>
-          <p>Designed and Developed by IICBITS Team</p>
-        </div>
+        <p className="md:hidden text-xs mt-7">
+          Copyright &copy; 2025 IIC BIT Sindri | All Rights Reserved.
+        </p>
+        <p className="text-right flex text-xs md:text-base">
+          Made with{" "}
+          <CiHeart className="inline-block h-4 w-4 md:h-5 md:w-5 text-red-500 mx-1" />{" "}
+          by Team IICBITS
+        </p>
       </div>
     </footer>
   );

@@ -1,7 +1,9 @@
-import { CheckCircle2, Contact2, TicketCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
+import { IoMdContacts } from "react-icons/io";
+import { LuTicketCheck } from "react-icons/lu";
 
 const JoinUs = () => {
   return (
@@ -28,19 +30,19 @@ const JoinUs = () => {
 
         <div className="flex justify-center items-center gap-4 md:gap-20 mt-12 font-semibold">
           <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
-            <TicketCheck height={32} width={32} />
+            <LuTicketCheck className="text-3xl" />
             <p className="text-center">
               Get access to the amazing community of innovators.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52">
-            <Contact2 height={32} width={32} />
+          <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
+            <IoMdContacts className="text-3xl" />
             <p className="text-center">
               Collaborate with industry experts and enhance skills.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52">
-            <CheckCircle2 height={32} width={32} />
+          <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
+            <FaCheckCircle className="text-3xl" />
             <p className="text-center">
               Organise exclusive events and workshops.
             </p>

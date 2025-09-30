@@ -1,45 +1,45 @@
 "use client";
 
-import { Youtube } from "lucide-react";
 import { useState } from "react";
+import { FaYoutube } from "react-icons/fa";
 
 const Resources = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
 
   const awards = [
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
     {
-      organization: "YouTube",
+      organization: "FaYouTube",
       title: "Top 5 Best of TedX talks for Entrepreneurs",
       company: "Blog",
-      logo: <Youtube height={30} width={30} />,
+      logo: <FaYoutube height={30} width={30} />,
       url: "",
     },
   ];

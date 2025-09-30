@@ -1,11 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 import { useState } from "react";
+import Link from "next/link";
 
 const TeamSection = () => {
-  const [activeTeam, setActiveTeam] = useState("leadership");
+  const [activeTeam, setActiveTeam] = useState("final");
 
   const faculties = [
     {
@@ -51,8 +54,8 @@ const TeamSection = () => {
   ];
 
   const students = {
-    leadership: {
-      name: "Leadership",
+    final: {
+      name: "Executive Members",
       members: [
         {
           id: 1,
@@ -100,8 +103,8 @@ const TeamSection = () => {
         },
       ],
     },
-    engineering: {
-      name: "Engineering",
+    third: {
+      name: "Associate Members",
       members: [
         {
           id: 5,
@@ -171,8 +174,8 @@ const TeamSection = () => {
         },
       ],
     },
-    design: {
-      name: "Design & Marketing",
+    second: {
+      name: "Coordinators",
       members: [
         {
           id: 11,
@@ -224,9 +227,9 @@ const TeamSection = () => {
 
   return (
     <section className="">
-      <div className="min-h-screen md:min-h-[80vh] bg-foreground">
+      <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
-          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl leading-loose mb-8">
+          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Empowering{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             <span className="text-accent">Design</span>
@@ -234,8 +237,6 @@ const TeamSection = () => {
             <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
-            <br />
-            <span className="text-secondary">based in</span> London{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -243,9 +244,9 @@ const TeamSection = () => {
             conversion focused designs—no delays, no drama.
           </p>
 
-          <button className="flex items-center space-x-2 px-5 py-2 rounded-full hover:bg-neutral-600 border border-gray-400 transition-colors duration-300">
+          <button className="flex items-center space-x-2">
             <span>Scroll Down</span>
-            <span className="text-xl animate-bounce">↓</span>
+            <span className="text-lg animate-bounce">↓</span>
           </button>
         </main>
       </div>
@@ -307,14 +308,14 @@ const TeamSection = () => {
                       className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                       aria-label={`${member.name} Twitter`}
                     >
-                      <Mail size={14} className="text-white" />
+                      <IoMdMail size={14} className="text-white" />
                     </a>
                     <a
                       href={member.social.linkedin}
                       className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                       aria-label={`${member.name} LinkedIn`}
                     >
-                      <Linkedin size={14} className="text-white" />
+                      <FaLinkedin size={14} className="text-white" />
                     </a>
                   </div>
                 </div>
@@ -384,21 +385,21 @@ const TeamSection = () => {
                         className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                         aria-label={`${member.name} Twitter`}
                       >
-                        <Mail size={14} className="text-white" />
+                        <IoMdMail size={14} className="text-white" />
                       </a>
                       <a
                         href={member.social.linkedin}
                         className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                         aria-label={`${member.name} LinkedIn`}
                       >
-                        <Linkedin size={14} className="text-white" />
+                        <FaLinkedin size={14} className="text-white" />
                       </a>
                       <a
                         href={member.social.instagram}
                         className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                         aria-label={`${member.name} Instagram`}
                       >
-                        <Instagram size={14} className="text-white" />
+                        <AiFillInstagram size={14} className="text-white" />
                       </a>
                     </div>
                   </div>
@@ -444,6 +445,36 @@ const TeamSection = () => {
             animation-delay: 500ms;
           }
         `}</style>
+      </div>
+
+      {/* Call to Action Button */}
+      <div className="mx-2 md:mx-4 mt-20 h-[70vh] md:h-[60vh]">
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/incub.png"
+            alt="Incubator"
+            width={500}
+            height={300}
+            className="w-full h-full object-cover rounded-3xl"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-7">
+            <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
+              Want to be part of this
+              <br />
+              <span className="text-accent">Amazing</span> Team?
+            </h3>
+            <p className="text-gray-400 mt-4 max-w-xl text-center">
+              Send your application at iicbit@bitsindri.ac.in or simply fill out
+              the registration form
+            </p>
+            <Link
+              href="/Registration-form"
+              className={`mt-10 px-4 py-2 border border-neutral-700 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
+            >
+              Apply Now<span className="ml-2 animate-pulse">→</span>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

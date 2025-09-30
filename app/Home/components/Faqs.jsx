@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 const FAQComponent = () => {
   const [openItems, setOpenItems] = useState(new Set()); // Speed question open by default
@@ -73,13 +73,13 @@ const FAQComponent = () => {
 
         {/* FAQ Grid */}
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-6">
-            {faqData.map((item) => (
-              <>
+          <div className="flex-1">
+            {faqData.map((item, index) => (
+              <div key={item.id}>
                 {item.id % 2 === 0 && (
                   <div
-                    key={item.id}
-                    className="bg-foreground rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+                    key={index}
+                    className="bg-foreground mb-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
                   >
                     <button
                       onClick={() => toggleItem(item.id)}
@@ -90,9 +90,9 @@ const FAQComponent = () => {
                       </h3>
                       <div className="ml-4 flex-shrink-0">
                         {openItems.has(item.id) ? (
-                          <Minus className="w-6 h-6 text-gray-600 transform transition-transform duration-200" />
+                          <FaMinus className="w-4 h-4 text-gray-600 transform transition-transform duration-200" />
                         ) : (
-                          <Plus className="w-6 h-6 text-gray-600 transform transition-transform duration-200" />
+                          <FaPlus className="w-4 h-4 text-gray-600 transform transition-transform duration-200" />
                         )}
                       </div>
                     </button>
@@ -112,16 +112,16 @@ const FAQComponent = () => {
                     </div>
                   </div>
                 )}
-              </>
+              </div>
             ))}
           </div>
-          <div className="flex-1 space-y-6">
+          <div className="flex-1">
             {faqData.map((item) => (
-              <>
+              <div key={item.id}>
                 {item.id % 2 !== 0 && (
                   <div
                     key={item.id}
-                    className="bg-foreground rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+                    className="bg-foreground mb-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
                   >
                     <button
                       onClick={() => toggleItem(item.id)}
@@ -132,9 +132,9 @@ const FAQComponent = () => {
                       </h3>
                       <div className="ml-4 flex-shrink-0">
                         {openItems.has(item.id) ? (
-                          <Minus className="w-6 h-6 text-gray-600 transform transition-transform duration-200" />
+                          <FaMinus className="w-4 h-4 text-gray-600 transform transition-transform duration-200" />
                         ) : (
-                          <Plus className="w-6 h-6 text-gray-600 transform transition-transform duration-200" />
+                          <FaPlus className="w-4 h-4 text-gray-600 transform transition-transform duration-200" />
                         )}
                       </div>
                     </button>
@@ -154,7 +154,7 @@ const FAQComponent = () => {
                     </div>
                   </div>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>

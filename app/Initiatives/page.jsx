@@ -50,9 +50,9 @@ const page = () => {
 
   return (
     <section className="">
-      <div className="min-h-screen md:min-h-[80vh] bg-foreground">
+      <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
-          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl leading-loose mb-8">
+          <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Empowering{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             <span className="text-accent">Design</span>
@@ -60,8 +60,6 @@ const page = () => {
             <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
             Design Startups
-            <br />
-            <span className="text-secondary">based in</span> London{" "}
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
@@ -69,14 +67,14 @@ const page = () => {
             conversion focused designs—no delays, no drama.
           </p>
 
-          <button className="flex items-center space-x-2 px-5 py-2 rounded-full hover:bg-neutral-600 border border-gray-400 transition-colors duration-300">
+          <button className="flex items-center space-x-2">
             <span>Scroll Down</span>
-            <span className="text-xl animate-bounce">↓</span>
+            <span className="text-lg animate-bounce">↓</span>
           </button>
         </main>
       </div>
 
-      <div className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="px-2 md:px-4 pt-10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <p className="text-sm text-gray-500 tracking-wider">(Events)</p>
@@ -147,7 +145,7 @@ const page = () => {
         </div>
 
         {/* Call to Action Button */}
-        <div className="max-w-7xl mx-auto mt-40 w-full h-[70vh] md:h-[60vh]">
+        <div className="mx-auto mt-40 w-full h-[70vh] md:h-[60vh]">
           <div className="relative w-full h-full">
             <Image
               src="/images/incub.png"
@@ -156,7 +154,7 @@ const page = () => {
               height={300}
               className="w-full h-full object-cover rounded-3xl"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-7">
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-6">
               <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
                 Let's <span className="text-accent">Collaborate</span> <br /> &
                 Create Something Big
