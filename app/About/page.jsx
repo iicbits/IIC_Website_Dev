@@ -66,7 +66,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 mx-auto gap-8 md:gap-20 mt-8">
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 mx-auto gap-8 md:gap-20 mt-8 mb-16">
         <div className="px-4 md:px-16">
           <div className="p-3 rounded-full bg-black w-fit text-white">
             <FaMapPin />

@@ -46,7 +46,7 @@ const Events = () => {
       <h1 className="text-5xl md:text-6xl font-calsans font-bold mb-8 text-center">
         Our Initiatives
       </h1>
-      <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto p-6">
+      <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto py-6 px-2">
         {/* Left Card */}
         <div className="bg-gray-900 text-white w-full md:w-80 rounded-3xl p-8 flex flex-col justify-between min-h-[500px] flex-shrink-0">
           <div className="space-y-12">
