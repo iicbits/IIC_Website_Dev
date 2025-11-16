@@ -52,15 +52,15 @@ const Navbar = () => {
             alt="BIT Logo"
             width={100}
             height={100}
-            className="w-auto h-auto"
+            className="w-16 md:w-auto h-auto"
           />
-          <div className="w-[2px] h-1/2 bg-accent"></div>
+          <div className="w-[1px] md:w-[2px] h-1/3 md:h-1/2 bg-accent"></div>
           <Image
             src="/images/logos/IIC logo.png"
             alt="IIC Logo"
             width={100}
             height={100}
-            className="ml-2 w-auto h-auto"
+            className="ml-2 w-20 md:w-auto h-auto"
           />
         </div>
 
