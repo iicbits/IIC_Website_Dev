@@ -142,13 +142,13 @@ const page = () => {
       <div className="mx-2 md:mx-4 mt-40 h-[70vh] md:h-[60vh]">
         <div className="relative w-full h-full">
           <Image
-            src="/images/incub.png"
+            src="/incubation/incubationCTA.webp"
             alt="Incubator"
             width={500}
             height={300}
             className="w-full h-full object-cover rounded-3xl"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-7">
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-3xl px-7">
             <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
               Need <span className="text-accent">Incubation</span> <br />
               Support?
@@ -159,7 +159,7 @@ const page = () => {
             </p>
             <Link
               href="/Contact"
-              className={`mt-10 px-4 py-2 border border-neutral-700 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
+              className={`mt-10 px-4 py-2 border border-neutral-400 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
             >
               Contact<span className="ml-2 animate-pulse">→</span>
             </Link>

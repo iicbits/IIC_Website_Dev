@@ -272,7 +272,7 @@ const TeamSection = () => {
           </div>
 
           {/* Faculty Coordinators */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-36">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {faculties.map((member) => (
               <div
                 key={member.id}
@@ -323,6 +323,8 @@ const TeamSection = () => {
             ))}
           </div>
 
+          <div className="w-full h-[1px] bg-gray-400 mb-12"></div>
+
           {/* Team Filter Tabs */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-12">
             {Object.entries(students).map(([key, team]) => (
@@ -367,7 +369,7 @@ const TeamSection = () => {
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
 
                     {/* Name and Role Overlay */}
@@ -451,13 +453,13 @@ const TeamSection = () => {
       <div className="mx-2 md:mx-4 mt-20 h-[70vh] md:h-[60vh]">
         <div className="relative w-full h-full">
           <Image
-            src="/images/incub.png"
+            src="/team/teamCTA.jpg"
             alt="Incubator"
             width={500}
             height={300}
             className="w-full h-full object-cover rounded-3xl"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-7">
+          <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center rounded-3xl px-7">
             <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
               Want to be part of this
               <br />
@@ -469,7 +471,7 @@ const TeamSection = () => {
             </p>
             <Link
               href="/Registration-form"
-              className={`mt-10 px-4 py-2 border border-neutral-700 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
+              className={`mt-10 px-4 py-2 border border-neutral-400 rounded-full text-sm transition-colors duration-300 text-white hover:border-accent`}
             >
               Apply Now<span className="ml-2 animate-pulse">→</span>
             </Link>

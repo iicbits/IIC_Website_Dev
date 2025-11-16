@@ -148,13 +148,13 @@ const page = () => {
         <div className="mx-auto mt-40 w-full h-[70vh] md:h-[60vh]">
           <div className="relative w-full h-full">
             <Image
-              src="/images/incub.png"
+              src="/events/EventCTA.webp"
               alt="Incubator"
               width={500}
               height={300}
               className="w-full h-full object-cover rounded-3xl"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-3xl px-6">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-3xl px-6">
               <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
                 Let's <span className="text-accent">Collaborate</span> <br /> &
                 Create Something Big

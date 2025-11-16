@@ -40,10 +40,10 @@ const Hero = () => {
           <span className="text-xl">→</span>
         </button>
       </main>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-foreground to-[#f0eeee]/50 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-foreground via-[#f0eeee]/50 to-[#f0eeee]/50 -z-10"></div>
       <div className="absolute top-0 left-0 w-full h-full -z-20">
         <Image
-          src="/home/Banner.png"
+          src="/home/Banner.webp"
           alt="Hero Image"
           width={1920}
           height={1080}
