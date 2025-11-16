@@ -10,7 +10,7 @@ import Spotlight from "./Home/components/Spotlight";
 
 export default function Home() {
   return (
-    <>
+    <main className="">
       <Hero />
 
       <div className="md:min-h-screen h-fit w-full py-4">
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="relative z-0">
           <Image
-            src="/home/Banner_IC.webp"
+            src="/home/banner_IC.webp"
             alt="Incubation Centre"
             width={700}
             height={400}
@@ -35,6 +35,6 @@ export default function Home() {
       <Testimonials />
       <FAQComponent />
       <JoinUs />
-    </>
+    </main>
   );
 }
