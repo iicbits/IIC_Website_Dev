@@ -30,7 +30,7 @@ const Hero = () => {
           <span className="text-secondary">based in</span> London{" "}
         </h2>
 
-        <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
+        <p className="text-sm md:text-base max-w-xl text-gray-700 mb-12">
           We make it easy for startups to launch, grow, and scale with clean,
           conversion focused designs—no delays, no drama.
         </p>
@@ -40,7 +40,7 @@ const Hero = () => {
           <span className="text-xl">→</span>
         </button>
       </main>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-foreground via-[#f0eeee]/50 to-[#f0eeee]/50 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-foreground via-[#f0eeee]/50 to-black/30 -z-10"></div>
       <div className="absolute top-0 left-0 w-full h-full -z-20">
         <Image
           src="/home/Banner.webp"
