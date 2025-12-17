@@ -13,12 +13,11 @@ const JoinUs = () => {
           Registrations Ongoing.
         </h4>
         <h1 className="font-calsans text-5xl md:text-6xl leading-tight text-center">
-          Join an <span className="text-secondary">Exclusive</span> <br />{" "}
+          Join a <span className="text-secondary"></span> <br />{" "}
           Community of <span className="text-accent">Innovators</span>
         </h1>
         <p className="text-center text-sm md:text-lg max-w-xl mt-4 text-secondary">
-          Join our private community to access discussions, job opportunities,
-          and insights you won't find elsewhere.
+          Connect with like-minded creators, problem solvers, and aspiring founders. Engage in meaningful discussions, discover exclusive opportunities, and stay informed through a collaborative and supportive community.
         </p>
 
         <Link href="/Registration-form" rel="noopener noreferrer">
@@ -32,19 +31,19 @@ const JoinUs = () => {
           <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
             <LuTicketCheck className="text-3xl" />
             <p className="text-center">
-              Get access to the amazing community of innovators.
+              Get access to a vibrant community of innovators and creators.
             </p>
           </div>
           <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
             <IoMdContacts className="text-3xl" />
             <p className="text-center">
-              Collaborate with industry experts and enhance skills.
+              Collaborate with mentors and industry experts to grow your skills.
             </p>
           </div>
           <div className="flex justify-center items-center flex-col gap-4 text-xs md:text-base w-28 md:w-52 text-black">
             <FaCheckCircle className="text-3xl" />
             <p className="text-center">
-              Organise exclusive events and workshops.
+              Participate in exclusive events, workshops, and high-impact activities.
             </p>
           </div>
         </div>
