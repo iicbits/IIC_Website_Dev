@@ -11,6 +11,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "About Us", href: "/About" },
+    { name: "BITS TEXMiN", href: "/BITS_TEXMiN" },
     { name: "Initiatives", href: "/Initiatives" },
     { name: "Incubation", href: "/Incubation" },
     { name: "Team", href: "/Team" },

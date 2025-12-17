@@ -56,12 +56,12 @@ const page = () => {
         </main>
         <div className="md:w-1/2 px-4">
           <Image
-            src="/images/aboutus.webp"
+            src="/images/aboutus.png"
             alt="Incubator"
             width={500}
             height={300}
             priority
-            className="mx-auto"
+            className="mx-auto max-h-[60vh] object-contain"
           />
         </div>
       </div>

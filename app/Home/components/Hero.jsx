@@ -30,7 +30,7 @@ const Hero = () => {
           <span className="text-secondary">based in</span> London{" "}
         </h2>
 
-        <p className="text-sm md:text-base max-w-xl text-gray-700 mb-12">
+        <p className="text-sm md:text-base max-w-xl text-gray-900 mb-12">
           We make it easy for startups to launch, grow, and scale with clean,
           conversion focused designs—no delays, no drama.
         </p>
