@@ -83,7 +83,7 @@ const TeamSection = () => {
           id: 3,
           name: "Manohar Jha",
           role: "Secretary",
-          image: "/team/manohar_sir.png",
+          image: "/team/manohar.png",
           social: {
             email: "manoharjha809@gmail.com",
             linkedin: "https://www.linkedin.com/in/manohar-jha-1b1765257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -187,7 +187,7 @@ const TeamSection = () => {
           id: 12,
           name: "Ayush Bhagat",
           role: "Finance",
-          image: "/team/sophie.jpg",
+          image: "/team/ayush.png",
           social: {
             email: "ayush.iic@bitsindri.ac.in",
             linkedin: "www.linkedin.com/in/ ayush-k-bhagat",
@@ -220,7 +220,7 @@ const TeamSection = () => {
           id: 15,
           name: "Shashi Kumar",
           role: "Media",
-          image: "/team/sophie.jpg",
+          image: "/team/shashi.jpg",
           social: {
             email: "shashi.iic@bitsindri.ac.in",
             linkedin: "https://www.linkedin.com/in/shashi-kumar-60b0b3325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -468,7 +468,7 @@ const TeamSection = () => {
           id: 37,
           name: "Krish",
           role: "Community Engagement",
-          image: "/team/krish.png.jpg",
+          image: "/team/krish.png",
           social: {
             email: "krrish01sahu@gmail.com",
             linkedin: "https://www.linkedin.com/in/krrish-raj-333926335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -573,18 +573,16 @@ const TeamSection = () => {
       <div className="min-h-[60vh] bg-foreground">
         <main className="flex flex-col items-center justify-center text-center py-20 px-4 md:px-8 lg:px-16">
           <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
-            Empowering{" "}
+            Introducing the{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-            <span className="text-accent">Design</span>
+            <span className="text-accent">Team</span>
             <br />
-            <span className="text-secondary">for</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-            Design Startups
+            Behind Our Vision
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
-            We make it easy for startups to launch, grow, and scale with clean,
-            conversion focused designs—no delays, no drama.
+            Our team brings together dedicated faculty mentors and dynamic student leaders who work collectively to strengthen the culture of innovation and entrepreneurship at BIT Sindri. With diverse expertise and a shared commitment to growth, they guide programs, support ideas, and empower students to build impactful solutions. 
           </p>
 
           <button className="flex items-center space-x-2">
@@ -804,13 +802,12 @@ const TeamSection = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center rounded-3xl px-7">
             <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
-              Want to be part of this
+             Interested in becoming a
               <br />
-              <span className="text-accent">Amazing</span> Team?
+              <span className="text-accent">Part</span> Team?
             </h3>
             <p className="text-gray-400 mt-4 max-w-xl text-center">
-              Send your application at iicbit@bitsindri.ac.in or simply fill out
-              the registration form
+              Send your application to iicbits@bitsindri.ac.in  or simply fill out the registration form to get started.
             </p>
             <Link
               href="/Registration-form"

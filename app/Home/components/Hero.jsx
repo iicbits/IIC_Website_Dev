@@ -19,17 +19,16 @@ const Hero = () => {
           </p>
         </div>
         <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
-          Empowering{" "}
+          Igniting{" "}
           <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-          <span className="text-accent">Design</span>
+          <span className="text-accent">Innovation</span>
           <br />
-          <span className="text-secondary">for</span>{" "}
+          <span className="text-secondary">Inspiring</span>{" "}
           <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-          Design Startups
+          Ideas
           <br />
-          <span className="text-secondary">based in</span> London{" "}
+          <span className="text-secondary">Impacting the</span> Future{" "}
         </h2>
-
         <p className="text-sm md:text-base max-w-xl text-gray-900 mb-12">
           We make it easy for startups to launch, grow, and scale with clean,
           conversion focused designs—no delays, no drama.

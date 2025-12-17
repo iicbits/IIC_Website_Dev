@@ -9,23 +9,23 @@ const Events = () => {
   const testimonials = [
     {
       description:
-        "Franklin turned our ideas into a sharp, clean brand. Fast, easy, and right on point.",
+        "Showcase your ideas, compete with top innovators, and earn funding to turn your concept into a real venture.",
       author: "Ethan Moore",
       position: "Idea Pitching Competition",
       image: "/images/incub.png", // Replace with actual image path
     },
     {
       description:
-        "Working with Franklin was a game-changer for our startup. Incredible attention to detail.",
+        "A 36-hour innovation marathon where students solve real challenges, build creative solutions, and showcase teamwork under pressure.",
       author: "Sarah Johnson",
-      position: "Innovathon 2025",
+      position: "Innovathon",
       image: "/images/incub.png", // Replace with actual image path
     },
     {
       description:
-        "The best design partner we've ever worked with. Professional and creative.",
+        "A platform to present mining focused innovations, compete across rounds, and secure funding to grow impactful tech-driven solutions.",
       author: "Mike Chen",
-      position: "TexCelerate 2025",
+      position: "TexCelerate",
       image: "/images/incub.png", // Replace with actual image path
     },
   ];
