@@ -6,14 +6,17 @@ const IntroIIC = () => {
     <section className="min-h-screen pt-32 pb-16 flex flex-col items-center justify-center">
       <h2 className="text-accent text-5xl font-dancingscript mb-8">Hello.</h2>
       <p className="text-3xl md:text-4xl font-calsans max-w-5xl text-center px-6">
-        Welcome to the Startup & Entrepreneurship Cell, BIT Sindri.We are committed to{" "}
+        Welcome to the Institution's Innovation Council at BIT Sindri. We are
+        dedicated to{" "}
         <span className="text-secondary">
           {" "}
-          building a campus where ideas grow, leadership develops, and innovation thrives. As the official council driving entrepreneurial initiatives at BIT Sindri, we work to empower students with the mindset, skills, and opportunities needed to transform ideas into impactful solutions.{" "}
+          fostering innovation and entrepreneurship among students and faculty.{" "}
         </span>{" "}
-        Our ecosystem connects creative thinking with real world exposure through mentorship, entrepreneurial initiatives, and hands on innovation experiences.
-        Here, students are encouraged to explore, experiment, and grow because every idea deserves the chance to become something impactful.
+        Our mission is to create a vibrant ecosystem that nurtures creativity,
+        collaboration, and the development of groundbreaking ideas. Join us in
+        our journey to inspire and empower the next generation of innovators!
       </p>
+
       {/* <div className="flex justify-center flex-wrap max-w-xl gap-4 mt-12">
         <p className="bg-secondary text-sm text-white rounded-2xl px-4 py-2">
           Entrepreneurship

@@ -128,11 +128,13 @@ const page = () => {
             <br />
             <span className="text-secondary">Building</span>{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-            Entrepreneurs for Tomorrow 
+            Entrepreneurs for Tomorrow
           </h2>
 
-          <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
-            Our incubation program supports student led startups at every stage helping them refine ideas, build prototypes, and move toward real market validation. Several startups from BIT Sindri have already secured seats in our incubation centre, gaining access to mentorship, resources, and a growth focused environment. We aim to strengthen both emerging and established startups as they shape impactful entrepreneurial journeys.
+          <p className="text-sm md:text-base max-w-xl text-secondary mb-7">
+            Our incubation program supports student led startups at every stage
+            helping them refine ideas, build prototypes, and move toward real
+            market validation.
           </p>
 
           <button className="flex items-center space-x-2">
@@ -226,11 +228,13 @@ const page = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-3xl px-7">
             <h3 className="text-white text-4xl md:text-5xl font-bold text-center">
-              Looking to Get Your <span className="text-accent">Startup</span> <br />
+              Looking to Get Your <span className="text-accent">Startup</span>{" "}
+              <br />
               Incubated?
             </h3>
             <p className="text-gray-400 mt-4 max-w-xl text-center">
-              Reach out to us at iicbits@bitsindri.ac.in or simply fill out the contact form to begin your incubation journey.
+              Reach out to us at iicbits@bitsindri.ac.in or simply fill out the
+              contact form to begin your incubation journey.
             </p>
             <Link
               href="/Contact"
