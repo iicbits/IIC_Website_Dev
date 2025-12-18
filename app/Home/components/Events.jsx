@@ -51,19 +51,19 @@ const Events = () => {
         <div className="bg-gray-900 text-white w-full md:w-80 rounded-3xl p-8 flex flex-col justify-between min-h-[500px] flex-shrink-0">
           <div className="space-y-12">
             <div>
-              <div className="text-6xl font-bold mb-2">35+</div>
+              <div className="text-6xl font-bold mb-2">100+</div>
               <div className="text-gray-300 text-lg">Total Events</div>
             </div>
 
             <div>
-              <div className="text-6xl font-bold mb-2">10L+</div>
+              <div className="text-6xl font-bold mb-2">50L+</div>
               <div className="text-gray-300 text-lg">
                 Total Prize Money Distributed
               </div>
             </div>
 
             <div>
-              <div className="text-6xl font-bold mb-2">1000+</div>
+              <div className="text-6xl font-bold mb-2">10,000+</div>
               <div className="text-gray-300 text-lg">Participation</div>
             </div>
           </div>
