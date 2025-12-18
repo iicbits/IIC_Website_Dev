@@ -193,8 +193,41 @@ const TeamSection = () => {
         {
           id: 4,
           name: "Kashish Jain",
-          role: "VP of Customer Success",
+          role: "Innovation Head",
           image: "/team/kashish_mam.png",
+          social: {
+            email: "skashish2426@gmail.com",
+            linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256",
+            instagram: "https://www.instagram.com/kashish_7029",
+          },
+        },
+        {
+          id: 5,
+          name: "Harsh Bhargav",
+          role: "Technical Head",
+          image: "/team/Harsh.png",
+          social: {
+            email: "skashish2426@gmail.com",
+            linkedin: "#",
+            instagram: "#",
+          },
+        },
+        {
+          id: 4,
+          name: "Tisha Aggarwal",
+          role: "Community Engagement",
+          image: "/team/tisha.png",
+          social: {
+            email: "skashish2426@gmail.com",
+            linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256",
+            instagram: "https://www.instagram.com/kashish_7029",
+          },
+        },
+        {
+          id: 4,
+          name: "Amit Kumar Mishra",
+          role: "Design Head",
+          image: "/team/amit.png",
           social: {
             email: "skashish2426@gmail.com",
             linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256",
