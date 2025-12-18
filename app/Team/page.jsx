@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { MdCheck } from "react-icons/md"; // Import for the tick icon
+import { MdCheck } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
@@ -30,10 +30,10 @@ const TeamSection = () => {
           <h2 className="font-calsans text-5xl md:text-5xl lg:text-7xl md:leading-loose mb-8">
             Introducing the{" "}
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-            <span className="text-accent">Team</span>
+            <span className="text-accent">Team</span>,
             <br />
             <span className="inline-block animate-[bounce_3s_ease-in-out_infinite] duration-700"></span>{" "}
-            Behind Our Vision
+            Behind <span className="text-secondary">Our Vision</span>
           </h2>
 
           <p className="text-sm md:text-base max-w-xl text-secondary mb-12">
