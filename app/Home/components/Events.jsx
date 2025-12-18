@@ -10,23 +10,20 @@ const Events = () => {
     {
       description:
         "Showcase your ideas, compete with top innovators, and earn funding to turn your concept into a real venture.",
-      author: "Ethan Moore",
       position: "Idea Pitching Competition",
-      image: "/images/incub.png", // Replace with actual image path
+      image: "/events/ipc1.webp", // Replace with actual image path
     },
     {
       description:
         "A 36-hour innovation marathon where students solve real challenges, build creative solutions, and showcase teamwork under pressure.",
-      author: "Sarah Johnson",
       position: "Innovathon",
-      image: "/images/incub.png", // Replace with actual image path
+      image: "/events/inno1.webp", // Replace with actual image path
     },
     {
       description:
         "A platform to present mining focused innovations, compete across rounds, and secure funding to grow impactful tech-driven solutions.",
-      author: "Mike Chen",
       position: "TexCelerate",
-      image: "/images/incub.png", // Replace with actual image path
+      image: "/events/tex1.webp", // Replace with actual image path
     },
   ];
 
