@@ -93,8 +93,8 @@ const TeamSection = () => {
     },
     {
       id: 8,
-      name: "Sarah Kumala",
-      role: "VP of Customer Success",
+      name: "Mr. Izhar Hussain",
+      role: "Internal Event Coordinator",
       image: "/team/fac.webp",
       social: {
         email: "#",
